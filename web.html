@@ -8,10 +8,10 @@
     <title>Ivy-Project</title>
 </head>
 <body>
-<!-- tạo header -->
+<!------------------------------------- tạo header ----------------------------------------------->
 <header>
     <div class="logo">
-        <img src="images/logo.png">
+        <a href=""><img src="images/logo.png"></a>
     </div>
     <div class="menu">
         <li><a href="">NỮ</a>
@@ -44,13 +44,14 @@
         <li><a href="">THÔNG TIN</a></li>
     </div>
     <div class="others">
-        <li><input placeholder="Tìm kiếm" type="text"> <i class="fa fa-search"></i></li>
+        <li><input placeholder="Tìm kiếm" type="text"></li>
+        <li><a class="fa fa-search" href=""></a></li>
         <li><a class="fa fa-paw" href="" ></a></li>
         <li><a class="fa fa-user" href="" ></a></li>
         <li><a class="fa fa-shopping-bag" href=""></a></li>
     </div>
 </header>
-<!-- Thêm ảnh, slide -->
+<!---------------------------------------- Thêm ảnh, slide ------------------------------------->
 <section id="slider">
 <div class="aspect-ratio-169">
     <img src="images/slide1.jpg">
@@ -65,8 +66,54 @@
     <div class="dot"></div>
 </div>
 </section>
+<!----------------------------Tạo store, info và footer-------------------------------------->
+<section class="app-container">
+    <p>Tải ứng dụng</p>
+    <div class="store">
+        <img src="images/googleplay.png">
+        <img src="images/appstore.png">
+    </div>
+    <p>Nhận thông tin các chương trình</p>
+    <input type="text" placeholder="Nhập email của bạn">
+</section>
+<div class="footer-top">
+    <li><a href=""><img src="images/dmca_protected_16_120.png"></a></li>
+    <li><a href=""><img src="images/img-congthuong.png"></a></li>
+    <li><a href="">Liên hệ</a></li>
+    <li><a href="">Tuyển dụng</a></li>
+    <li><a href="">Giới thiệu</a></li>
+    <li>
+        <a class="fa-brands fa-facebook-f" href=""></a>
+        <a class="fa-brands fa-instagram" href=""></a>
+        <a class="fa-solid fa-envelope" href=""></a>
+    </li>
+</div>
+<div class="info">
+    <p>
+        Trường Đại học Công nghệ Thông tin <br>
+        Địa chỉ: Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh. <br>
+        Số điện thoại: <b>0368197969</b> 
+    </p>
+</div>
+<div class="footer-bottom">
+    <p>© Copyright Trường Đại học Công nghệ Thông tin</p>
+</div>
 </body>
+<!------------------------------------------Script--------------------------------------->
 <script>
+    const header = document.querySelector("header")
+    window.addEventListener("scroll", function(){
+        yOffset = window.pageYOffset
+        if(yOffset>0)
+        {
+            header.classList.add("sticky")
+        }
+        else{
+            header.classList.remove("sticky")
+        }
+
+    })
+    
     const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
     const imgContainer = document.querySelector(".aspect-ratio-169")
     const dotItem = document.querySelectorAll(".dot")

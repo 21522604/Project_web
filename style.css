@@ -1,3 +1,4 @@
+/*----------------------------------------------------------------- Init ------------------------------------------------------*/
 *{
     margin:0;
     padding:0;
@@ -11,12 +12,24 @@ a{
     text-decoration: none;
     color: #000;
 }
+/*----------------------------------------------------------------- Header ------------------------------------------------------*/
 header{
     display: flex;
     justify-content: space-between;
     padding: 50px 50px;
     height: 70px;
+    width: 100%;
     align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(225, 225, 225, 0.5);
+}
+header:hover{
+    background-color: #fff;
+}
+header.sticky{
+    background-color: rgba(255, 255, 255, 1);
+
 }
 .logo{
     flex: 1;
@@ -31,7 +44,7 @@ header{
 }
 .menu>li:hover .sub-menu{
     visibility: visible;
-    top: 30px;
+    top: 60px;
 }
 .sub-menu{
     position: absolute;
@@ -39,9 +52,10 @@ header{
     border: 1px solid #ccc;
     padding: 10px 0 10px 20px;
     visibility: hidden;
-    top: 50px;
+    top: 75px;
     transition: 0.3s;
-
+    z-index: 1;
+    background-color: #fff;
 }
 .sub-menu ul{
     padding-left: 20px;
@@ -62,19 +76,43 @@ header{
 }
 .others>li{
     padding: 0 12px;
+    position: relative;
 }
 .others>li:first-child{
     position: relative;
 }
 .others>li:first-child input{
-    width: 100%;
+    width: 120%;
     border:none;
     border-bottom: 1px solid #333;
+    outline: none;
+    background-color: transparent;
+    padding-right: 0;
 }
-.others>li:first-child i{
+.others>li:first-child a{
     position: absolute;
     right: 12px;
+    left: 0;
 }
+.others li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: #ccc;
+
+}
+.others li:first-child::after{
+    display: none;
+}
+.others li:last-child::after{
+    display: none;
+}
+/*----------------------------------------------------------------- Content ------------------------------------------------------*/
 .aspect-ratio-169 {
     display: block;
     position: relative;
@@ -114,4 +152,86 @@ header{
     border-bottom: 2px #000 solid;
     overflow: hidden;
 }
-  
+/*----------------------------------------------------------------- App download ------------------------------------------------------*/
+.app-container{
+    text-align: center;
+    align-items: center;
+    padding: 30px 0 50px 0;
+}
+.store{
+    margin: 50px;
+}
+.store img{
+    height: 50px;
+    cursor: pointer;
+}
+.app-container p{
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+.app-container input{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
+}
+/*----------------------------------------------------------------- Footer ------------------------------------------------------*/
+footer{
+    text-align: center;
+}
+.footer-top{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.footer-top li{
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+.footer-top li::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #ccc;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer-top li:first-child::after{
+    display: none;
+}
+.footer-top li:first-child{
+    padding-right: 0;
+}
+.footer-top li:last-child::after
+{
+    display: none;
+}
+.footer-top li:last-child a{
+    padding-right: 10px;
+}
+.info{
+    text-align: center;
+    padding-bottom: 30px;
+    border: none;
+    border-bottom: 2px #000 solid;
+}
+.footer-bottom{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
