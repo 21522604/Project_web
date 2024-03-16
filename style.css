@@ -254,7 +254,7 @@ header{
     font-size: 12px;
 }
 /*----------------------------------------------------------------- Product ------------------------------------------------------*/
-.product{
+.container{
     padding: 100px 50px 0;
 }
 .product-top{
@@ -453,6 +453,168 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     color: #333333;
     font-weight: bold;
+}
+/*----------------------------------------------------------------- Cart ------------------------------------------------------*/
+.cart{
+    padding: 100px 0;
+}
+.cart-top-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-top{
+    height: 1px;
+    width: 70%;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 10px;
+}
+.cart-top-item{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-top-item i{
+    color: #ddd;
+}
+.cart-top-cart{
+    border: 1px solid #0db7ea;
+}
+.cart-top-cart i{
+    color: #0db7ea;
+}
+.cart-content-left{
+    flex: 2;
+    padding-right: 12px;
+}
+.cart-content-left table{
+    width: 100%;
+    text-align: center;
+}
+.cart-content-left table th{
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black;
+    border-collapse: collapse;
+    border-bottom: 2px solid #dddddd;
+}
+.cart-content-left table p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.cart-content-left table input{
+    width: 30px;
+}
+.cart-content-left table span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+.cart-content-left table img{
+    width: 130px;
+}
+.cart-content-left table td{
+    padding: 20px 0;
+    border-bottom: 2px solid #dddddd;
+}
+.cart-content-left table td:nth-child(2){
+    max-width: 130px;
+}
+.cart-content-left table td:nth-child(3) img{
+    width: 30px;
+}
+.cart-content-right{
+    flex: 1;
+    padding-left: 15px;
+    border-left: 2px solid #dddddd;
+}
+.cart-content-right table{
+    width: 100%;
+}
+.cart-content-right table th{
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-collapse: collapse;
+    color: #333;
+    border-bottom: 2px solid #dddddd;
+}
+.cart-content-right table td{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #333;
+    padding: 6px 0;
+}
+.cart-content-right table tr:nth-child(4) td{
+    border-top: 2px solid #dddddd;
+}
+.cart-content-right table tr td:last-child{
+    text-align: right;
+}
+.cart-content-right-text{
+    margin: 20px 0;
+    text-align: center;
+}
+.cart-content-right-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #333;
+}
+.cart-content-right-button{
+    text-align: center;
+    align-items: center;
+}
+.cart-content-right-button button{
+    padding: 0 18px;
+    height: 35px;
+    cursor: pointer;
+}
+.cart-content-right-button button:first-child{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.cart-content-right-button button:first-child:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.cart-content-right-button button:last-child{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.cart-content-right-button button:last-child:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+.cart-content-right-login{
+    margin-top: 20px;
+}
+.cart-content-right-login p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+}
+.cart-content-right-login p a{
+    color: #Bf8a49;
 }
 /*----------------------------------------------------------------- App download ------------------------------------------------------*/
 .app-container{
