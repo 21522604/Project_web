@@ -767,6 +767,118 @@ header{
 .delivery-content-right table tr td:first-child{
     text-align: left;
 }
+/*----------------------------------------------------------------- Payment ------------------------------------------------------*/
+.payment{
+    padding: 100px 0;
+}
+.payment-top-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payment-top{
+    height: 1px;
+    width: 70%;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 10px;
+}
+.payment-top-item{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payment-top-item i{
+    color: #dddddd;
+}
+.payment-top-payment{
+    border: 1px solid #0db7ea;
+}
+.payment-top-payment i{
+    color: #0db7ea;
+}
+.payment-content-left{
+    width: 60%;
+}
+.payment-content-left-method-delivery{
+    margin-bottom: 20px;
+}
+.payment-content-left p, label{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.payment-content-left-method-payment-item p{
+    padding-left: 20px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.payment-content-left-method-payment-item-img{
+    margin-bottom: 10px;
+}
+.payment-content-left-method-payment-item-momo{
+    margin-bottom: 10px;
+}
+.payment-content-right{
+    width: 40%;
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.payment-content-right-button{
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px dashed #dddddd;
+}
+.payment-content-right-button input{
+    height: 30px;
+    width: 200px;
+    margin-right: 100px;
+    padding-left: 12px;
+}
+.payment-content-right-button button{
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.payment-content-right-manhanvien{
+    margin-top: 20px;
+}
+.payment-content-right-manhanvien select{
+    height: 30px;
+    width: 100%;
+    color: #75758a;
+    padding-left: 12px;
+}
+.payment-bottom{
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+.payment-bottom button{
+    height: 35px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid black;
+}
+.payment-bottom button:hover{
+    background-color: black;
+    color: white;
+}
 /*----------------------------------------------------------------- App download ------------------------------------------------------*/
 .app-container{
     border-top: 2px #000 solid;
