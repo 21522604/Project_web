@@ -9,10 +9,7 @@
 </head>
 <body>
 <!------------------------------------- tạo header ----------------------------------------------->
-<<<<<<< HEAD
-=======
 
->>>>>>> 1114a2e6d311c43a840f559eb8c80eddef12e5cf
 <header>
     <div class="logo">
         <a href=""><img src="images/logo.png"></a>
@@ -147,107 +144,98 @@
         <li><a class="fa fa-shopping-bag" href=""></a></li>
     </div>
 </header>
-<!--------------------------------------------- Category ---------------------------------------------------->
-<section class="category">
+<!--------------------------------------------- Delivery ---------------------------------------------------->
+<section class="delivery">
     <div class="container">
-        <div class="category-top row">
-            <p>Trang chủ</p> <span>&#10230;</span> <p>Nữ</p> <span>&#10230;</span> <p>Hàng mới về</p>
+        <div class="delivery-top-wrap">
+            <div class="delivery-top">
+                <div class="delivery-top-cart delivery-top-item">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="delivery-top-address delivery-top-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="delivery-top-payment delivery-top-item">
+                    <i class="fas fa-money-check-alt"></i>
+                </div>
+            </div>
         </div>
+        
     </div>
     <div class="container">
-        <div class="row">
-            <div class="category-left">
-                <ul>
-                    <li class="category-left-li"><a href="#">NỮ</a>
-                        <ul>
-                            <li><a href="">HÀNG NỮ MỚI VỀ</a></li>
-                            <li><a href="">BEYOND TRENDY</a></li>
-                            <li><a href="">JEANS FOR JOY</a></li>
-                        </ul>
-                    </li>
-                    <li class="category-left-li"><a href="#">NAM</a>
-                        <ul>
-                            <li><a href="">HÀNG NAM MỚI VỀ</a></li>
-                            <li><a href="">BEYOND TRENDY</a></li>
-                            <li><a href="">JEANS FOR JOY</a></li>
-                        </ul>
-                    </li>
-                    <li class="category-left-li"><a href="#">TRẺ EM</a></li>
-                    <li class="category-left-li"><a href="#">BỘ SƯU TẬP</a></li>
-                </ul>
+        <div class="delivery-content row">
+            <div class="delivery-content-left">
+                <p>Vui lòng chọn địa chỉ giao hàng</p>
+                <div class="delivery-content-left-login row">
+                    <a href=""><i class="fas fa-sign-in-alt"></i></a>
+                    <a href=""><p>Đăng nhập(Nếu bạn đã có tài khoản)</p></a>
+                </div>
+                <div class="delivery-content-left-khachle row">
+                    <input checked name="loaikhach" type="radio">
+                    <p><span style="font-weight: bold;">Khách lẻ</span>(Nếu bạn không muốn lưu lại thông tin)</p>
+                </div>
+                <div class="delivery-content-left-signup row">
+                    <input name="loaikhach" type="radio">
+                    <p><span style="font-weight: bold;">Đăng ký</span>(Tạo mới tài khoản với thông tin bên dưới)</p>
+                </div>
+                <div class="delivery-content-left-input-top row">
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Họ tên <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Điện thoại <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Tỉnh/Tp <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Quận/Huyện <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="delivery-content-left-input-bottom">
+                    <label for="">Địa chỉ <span style="color: red;">*</span></label>
+                    <input type="text">
+                </div>
+                <div class="delivery-content-left-button row">
+                    <a href=""><span>&#171;</span><p>Quay lại giỏ hàng</p></a>
+                    <button><p style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</p></button>
+                </div>
             </div>
-            <div class="category-right row">
-                <div class="category-right-top-item">
-                    <p>HÀNG NỮ MỚI VỀ</p>
-                </div>
-                <div class="category-right-top-item">
-                    <button><span>Bộ lọc</span> <i class="fa-solid fa-sort-down"></i></button>
-                </div>
-                <div class="category-right-top-item">
-                    <select name="" id="">
-                        <option value="">Mặc định</option>
-                        <option value="">Mới nhất</option>
-                        <option value="">Được mua nhiều nhất</option>
-                        <option value="">Được yêu thích nhất</option>
-                        <option value="">Giá: Cao đến thấp</option>
-                        <option value="">Giá: Thấp đến cao</option>
-                    </select>
-                </div>
-                <div class="category-right-content row">
-                    <div class="category-right-content-item">
-                        <img src="images/sp_nu1.jpg" alt="">
-                        <h1>Áo Twill Cổ Kiểu</h1>
-                        <p>425.000đ</p>
-                    </div>
-                    <div class="category-right-content-item">
-                        <img src="images/sp_nu2.jpg" alt="">
-                        <h1>Áo Lụa Cổ Thuyền</h1>
-                        <p>445.000đ</p>
-                    </div>
-                    <div class="category-right-content-item">
-                        <img src="images/sp_nu3.jpg" alt="">
-                        <h1>Set Ren Fuchsia - Áo Kiểu Cùng Chân Váy</h1>
-                        <p>840.000đ</p>
-                    </div>
-                    <div class="category-right-content-item">
-                        <img src="images/sp_nu4.jpg" alt="">
-                        <h1>Áo Sơ Mi Ôm Tay Lửng</h1>
-                        <p>575.000đ</p>
-                    </div>
-                    <div class="category-right-content-item">
-                        <img src="images/sp_nu5.jpg" alt="">
-                        <h1>Set Bộ Họa Tiết Chấm Bi</h1>
-                        <p>790.000đ</p>
-                    </div>
-                    <div class="category-right-content-item">
-                        <img src="images/sp_nu6.jpg" alt="">
-                        <h1>Áo Sơ Mi Cánh Xanh</h1>
-                        <p>595.000đ</p>
-                    </div>
-                    <div class="category-right-content-item">
-                        <img src="images/sp_nu7.jpg" alt="">
-                        <h1>Áo Sơ Mi Cánh Cam</h1>
-                        <p>595.000đ</p>
-                    </div>
-                    <div class="category-right-content-item">
-                        <img src="images/sp_nu8.jpg" alt="">
-                        <h1>Áo Sơ Mi Xếp Ly Tầng</h1>
-                        <p>595.000đ</p>
-                    </div>
-                </div>
-                <div class="category-right-bottom row">
-                    <div class="category-right-bottom-items">
-                        <p>Hiển thị 2 <span>|</span> 4 sản phẩm</p>
-                    </div>
-                    <div class="category-right-bottom-items">
-                    <p><span>&#171;</span>1 2 3 4 5<span>&#187;</span> Trang cuối</p>
-                    </div>
-                </div>
+            <div class="delivery-content-right">
+                <table>
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Giảm giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                    <tr>
+                        <td>Áo Twill cổ kiều</td>
+                        <td>-30%</td>
+                        <td>1</td>
+                        <td><p>590.000đ</p></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;" colspan="3">Tổng</td>
+                        <td style="font-weight: bold;"><p>690.000đ</p></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;" colspan="3">Thuế VAT</td>
+                        <td style="font-weight: bold;"><p>69.000đ</p></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;" colspan="3">Tổng tiền hàng</td>
+                        <td style="font-weight: bold;"><p>759.000đ</p></td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
 </section>
-
 <!--------------------------------------------- Footer ---------------------------------------------------->
 <section class="app-container">
     <p>Tải ứng dụng</p>
@@ -295,15 +283,6 @@
         }
 
     })
-    // menu-slidebar-category
-    const itemSliderbar = document.querySelectorAll(".category-left-li")
-    itemSliderbar.forEach(function(menu, index){
-        menu.addEventListener("click", function(){
-            menu.classList.toggle("block")
-            
-        })
-    })
-
 </script>
 
 </html>
