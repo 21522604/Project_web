@@ -1,4 +1,7 @@
 <?php
+    include "config.php";
+?>
+<?php
 Class Database{
     public $host = DB_HOST;
     public $user = DB_USER;
@@ -15,44 +18,44 @@ Class Database{
             return false;
         }
     }
-}
-//Select or Read Data
-public function select($query){
-    $result = $this ->link->query($query) or die($this->link->eror.__LINE__);
-    if($result->num_rows > 0){
-        return $result;
+    //Select or Read Data
+    public function select($query){
+        $result = $this ->link->query($query) or die($this->link->eror.__LINE__);
+        if($result->num_rows > 0){
+            return $result;
+        }
+        else {
+            return false;
+        }
     }
-    else {
-        return false;
+    //Insert Data
+    public function insert($query){
+        $insert_row = $this-> link->query($query) or die($this->link->eror.__LINE__);
+        if($insert_row){
+            return $insert_row;
+        }
+        else {
+            return false;
+        }
     }
-}
-//Insert Data
-public function insert($query){
-    $insert_row = $this-> link->query($query) or die($this->link->eror.__LINE__);
-    if($insert_row){
-        return $insert_row;
+    //Update Data
+    public function update($query){
+        $update_row = $this-> link->query($query) or die($this->link->eror.__LINE__);
+        if($update_row){
+            return $update_row;
+        }
+        else {
+            return false;
+        }
     }
-    else {
-        return false;
-    }
-}
-//Update Data
-public function update($query){
-    $update_row = $this-> link->query($query) or die($this->link->eror.__LINE__);
-    if($update_row){
-        return $update_row;
-    }
-    else {
-        return false;
-    }
-}
-//Delete Data
-public function delete($query){
-    $delete_row = $this-> link->query($query) or die($this->link->eror.__LINE__);
-    if($delete_row){
-        return $delete_row;
-    }
-    else {
-        return false;
+    //Delete Data
+    public function delete($query){
+        $delete_row = $this-> link->query($query) or die($this->link->eror.__LINE__);
+        if($delete_row){
+            return $delete_row;
+        }
+        else {
+            return false;
+        }
     }
 }
