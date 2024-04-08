@@ -1,24 +1,24 @@
 <section class="admin-content">
         <div class="admin-content-left">
             <ul>
-                <li><a href="#">Danh muc</a>
+                <li><a href="#">Danh mục</a>
                     <ul>
-                        <li><a href="">Them danh muc</a></li>
-                        <li><a href="">Danh sach danh muc</a></li>
+                        <li><a href="categoryadd.php">Thêm danh mục</a></li>
+                        <li><a href="categorylist.php">Danh sách danh mục</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Loai san pham</a>
+                    <a href="#">Loại sản phẩm</a>
                     <ul>
-                        <li><a href="">Them loai san pham</a></li>
-                        <li><a href="">Danh sach loai san pham</a></li>
+                        <li><a href="typeadd.php">Thêm loại sản phẩm</a></li>
+                        <li><a href="typelist.php">Danh sách loại sản phẩm</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">San pham</a>
+                    <a href="#">Sản phẩm</a>
                     <ul>
-                        <li><a href="">Them san pham</a></li>
-                        <li><a href="">Danh sach san pham</a></li>
+                        <li><a href="">Thêm sản phẩm</a></li>
+                        <li><a href="">Danh sách sản phẩm</a></li>
                     </ul>
                 </li>
 
